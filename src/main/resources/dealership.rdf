@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/"
+     xml:base="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:car_dealership="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership">
+        <rdfs:comment xml:lang="en">An ontology designed to facilitate car dealerships in organizing and recommending new or used cars for consumers.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasColor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasCustomer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasCustomer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasManufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasManufacturer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasProduct">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasSalesperson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasSalesperson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Salesperson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasYear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#hasYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#customerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#customerID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#priceValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#priceValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#salespersonID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#salespersonID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Salesperson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#specifications -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#specifications">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Flex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Flex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Automatic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Automatic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transmission_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Cash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Cash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Payment_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Corporate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Corporate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Customer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Individual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Customer">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Salesperson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Diesel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Diesel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Electric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Electric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Financing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Financing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Payment_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Gasoline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Gasoline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Fuel_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Individual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Individual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Customer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Lease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Lease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transmission_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Payment_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Payment_Method"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/SUV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/SUV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Sale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Sale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Salesperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Salesperson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transmission_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Transmission_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Truck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Truck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Vehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Year"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Astra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Astra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Flex"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Car"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manual"/>
+        <car_dealership:hasColor rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Black"/>
+        <car_dealership:hasManufacturer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Chevrolet"/>
+        <car_dealership:hasModel rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Hatch"/>
+        <car_dealership:hasYear rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2009"/>
+        <car_dealership:priceValue>R$ 30.000,00</car_dealership:priceValue>
+        <car_dealership:specifications>Advantage 2.0 8V 121cv</car_dealership:specifications>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Chevrolet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Chevrolet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Felipe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Felipe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Individual"/>
+        <car_dealership:customerID>10001</car_dealership:customerID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Frontier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Frontier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Diesel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Truck"/>
+        <car_dealership:hasColor rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Black"/>
+        <car_dealership:hasManufacturer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Nissan"/>
+        <car_dealership:hasModel rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Pick-up"/>
+        <car_dealership:hasYear rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2015"/>
+        <car_dealership:priceValue>R$ 100.000,00</car_dealership:priceValue>
+        <car_dealership:specifications>S 2.5 4x4 190cv</car_dealership:specifications>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Hatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Hatch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Hyundai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Hyundai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Nissan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Nissan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Paula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Paula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Salesperson"/>
+        <car_dealership:hasCustomer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Felipe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Pick-up -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Pick-up">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Rodrigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Rodrigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Individual"/>
+        <car_dealership:customerID>10003</car_dealership:customerID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#SUV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#SUV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Thiago -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Thiago">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Individual"/>
+        <car_dealership:customerID>10002</car_dealership:customerID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#ix35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#ix35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Flex"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Automatic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/SUV"/>
+        <car_dealership:hasColor rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Black"/>
+        <car_dealership:hasManufacturer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Hyundai"/>
+        <car_dealership:hasModel rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#SUV"/>
+        <car_dealership:hasYear rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2018"/>
+        <car_dealership:priceValue>GL 2.0 AT 167cv</car_dealership:priceValue>
+        <car_dealership:priceValue>R$ 90.000,00</car_dealership:priceValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Cash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Sale"/>
+        <car_dealership:hasCustomer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Felipe"/>
+        <car_dealership:hasProduct rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Astra"/>
+        <car_dealership:hasSalesperson rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Paula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Financing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Sale"/>
+        <car_dealership:hasCustomer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Thiago"/>
+        <car_dealership:hasProduct rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Frontier"/>
+        <car_dealership:hasSalesperson rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Paula"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#2018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Financing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership/Sale"/>
+        <car_dealership:hasCustomer rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Rodrigo"/>
+        <car_dealership:hasProduct rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#ix35"/>
+        <car_dealership:hasSalesperson rdf:resource="http://www.semanticweb.org/felip/ontologies/2024/2/car_dealership#Paula"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
